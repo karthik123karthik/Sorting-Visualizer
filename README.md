@@ -2,3 +2,4 @@
 
 ### BUILT USING NEXT JS AND USING SOME POPULAR ALGORITHMS
 
+## styling is made using tailwind css
