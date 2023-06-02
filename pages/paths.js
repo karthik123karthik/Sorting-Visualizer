@@ -15,29 +15,40 @@ function Paths() {
       let queue = [];
 
       queue.push([6,6]);
-
-      while(queue.length > 0){
+      visitedArray[6][6] = 1;
+      while(queue.length > 0){          
+        let n = queue.length;
+        visitedArray = arr.slice()
+        while(n--){
          const [x, y] = queue.shift();
-         visitedArray[x][y] = 1;
-         await delay(2);
-         setArray([...visitedArray]);
+
+         //if(x== 3 && y == 3)return
 
          if(x-1 >=0  && visitedArray[x-1][y] == 0){
           queue.push([x-1, y]);
+          visitedArray[x-1][y] = 1
          }
 
          if(x+1 <15  && visitedArray[x+1][y] == 0){
           queue.push([x+1, y]);
+          visitedArray[x+1][y] = 1
          }
 
          if( y-1>=0 && visitedArray[x][y-1] == 0){
           queue.push([x, y-1]);
+          visitedArray[x][y-1] = 1
          }
 
          if(y+1<20   && visitedArray[x][y+1] == 0){
           queue.push([x, y+1]);
+          visitedArray[x][y+1] = 1
          }
       }
+
+      await delay(100);
+      setArray([...visitedArray]);
+      await delay(100)
+    }
   }
    
 
