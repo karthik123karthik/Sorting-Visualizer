@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { delay } from '../components/utilities';
 
 
-function paths() {
+function Paths() {
 
   const [arr, setArray] = useState(Array.from({ length: 15 }, () => Array(20).fill(0)));
 
@@ -50,4 +50,4 @@ function paths() {
   )
 }
 
-export default paths
+export default Paths
