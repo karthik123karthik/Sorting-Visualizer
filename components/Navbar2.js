@@ -2,7 +2,7 @@ const Navbartwo = ({setArray}) => {
 
 
     function cleargrid(){
-        setArray(Array.from({ length: 18 }, () => Array(30).fill(0)))
+        setArray(Array.from({ length: 18 }, () => Array(37).fill(0)))
       }
 
 
