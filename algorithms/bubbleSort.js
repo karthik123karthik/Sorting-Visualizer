@@ -19,5 +19,9 @@ export async function bubbleSort(){
         temp[j].style.backgroundColor = "green";
     }
 
-    temp[0].style.backgroundColor="green";
+    for(let i=0; i<temp.length; i++){
+        temp[i].style.backgroundColor = "#005CC8";
+        await delay(5);
+      }
+
 }

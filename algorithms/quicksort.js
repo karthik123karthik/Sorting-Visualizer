@@ -3,6 +3,11 @@ import {delay} from "../components/utilities";
  export async function quickSort(){
    const temp = document.getElementsByClassName("bar");
    await quickSortHelper(temp,0,temp.length-1);
+
+   for(let i=0; i<temp.length; i++){
+    temp[i].style.backgroundColor = "#005CC8";
+    await delay(5);
+  }
    return;
 }
 

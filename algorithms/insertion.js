@@ -1,27 +1,33 @@
 import { delay } from "../components/utilities";
 
 export async function insertionSort() {
-  const temp = document.getElementsByClassName("bar");
-  
-  for (let j = 1; j < temp.length; j++) {
-    let i = j - 1;
-    temp[j].style.backgroundColor = "green";
-    const temp1 = temp[j].style.height;
-    
-    while (i >= 0 && parseInt(temp[i].style.height) > temp1) {
-      temp[i].style.backgroundColor = "green";
-      await delay(20);
-      temp[i + 1].style.height = temp[i].style.height;
-      temp[i].style.height = 0;
-      await delay(20);
-      i--;
-    }
-    
-    if (i >= 0) {
-      temp[i+1].style.height = temp1;
-      temp[i+1].style.backgroundColor = "green";
+  let arr = document.getElementsByClassName("bar");
+
+  for(let j=1; j<arr.length; j++){
+      let val = arr[j].style.height;
+      let i = j-1;
+      while(i>=0 && parseInt(arr[i].style.height)>parseInt(val)){
+        await delay(5)
+        arr[i+1].style.height = arr[i].style.height;
+        await delay(10)
+        arr[i].style.height = 0
+        await delay(100)
+        arr[i+1].style.backgroundColor = "green";
+        arr[i].style.backgroundColor = "green";
+        i--;
+      }
+
+
+      arr[i+1].style.backgroundColor = "blue";
+      arr[i+1].style.height = val
+      arr[i+1].style.backgroundColor = "green";
+      await delay(5)
     }
 
-    await delay(5)
+    for(let i=0; i<arr.length; i++){
+      arr[i].style.backgroundColor = "#005CC8";
+      await delay(5);
+    }
+
+
   }
-}

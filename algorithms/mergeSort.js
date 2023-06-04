@@ -6,14 +6,17 @@ export async function mergeSort(){
     let high = temp.length-1;
      
    await  mergeSortAlgo(temp,low,high);
+
+   for(let i=0; i<temp.length; i++){
+    temp[i].style.backgroundColor = "#005CC8";
+    await delay(5);
+  }
    return;
 }
 
 async function mergeSortAlgo(array,low,high){
 
-    if(low>=high) return;
-
-
+      if(low>=high) return;
         let mid = low + Math.floor((high-low)/2);
         await mergeSortAlgo(array,low,mid);
         await mergeSortAlgo(array,mid+1,high);
@@ -57,6 +60,7 @@ async  function  merge(array,low,mid,high){
         mid++;
     }
  }
+
  array[high].style.backgroundColor = "green";
  return;
 }

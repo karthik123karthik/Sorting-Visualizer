@@ -19,5 +19,8 @@ export  async function selectionSort(){
         temp[i].style.backgroundColor = "green";
      }
 
-     temp[temp.length - 1].style.backgroundColor="green";
+     for(let i=0; i<temp.length; i++){
+      temp[i].style.backgroundColor = "#005CC8";
+      await delay(5);
+    }
   }
