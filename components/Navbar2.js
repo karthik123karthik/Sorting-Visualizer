@@ -1,8 +1,9 @@
-const Navbartwo = ({setArray}) => {
+const Navbartwo = ({setArray, setCount, setAlgo}) => {
 
 
     function cleargrid(){
-        setArray(Array.from({ length: 18 }, () => Array(37).fill(0)))
+        setArray(Array.from({ length: 18 }, () => Array(37).fill(0)));
+        setCount(0);
       }
 
 
@@ -15,34 +16,8 @@ const Navbartwo = ({setArray}) => {
         </div>
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
-            <a
-              href="#"
-              className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-              aria-current="page"
-            >
-              bubble sort
-            </a>
-
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-            >
-              merge sort
-            </a>
-
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-            >
-              quick sort
-            </a>
-
-            <a
-              href="#"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-            >
-              selection sort
-            </a>
+          <a href="#" onClick={() => {setAlgo(1)}}  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DFS</a>
+          <a href="#" onClick={() => {setAlgo(2)}} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">BFS</a>
           <button onClick={cleargrid} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border mx-2 border-blue-500 hover:border-transparent rounded">Clear Grid</button>
           </div>
         </div>
