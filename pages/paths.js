@@ -9,9 +9,17 @@ function Paths() {
   );
   const [count, setCount] = useState(0);
   const [algo, setAlgo] = useState(-1);
+  const [addBrick, setAddBrick] = useState(false);
 
-  async function giveIndex(row, col) {
-    if (count === 0) {
+  async function giveIndex(row, col) { 
+    
+    if(addBrick){
+      let visited = arr.slice();
+      visited[row][col] = 3;
+      setArray([...visited]);
+    }
+    else {
+      if (count === 0) {
       let visited = arr.slice();
       visited[row][col] = 2;
       setArray([...visited]);
@@ -25,6 +33,7 @@ function Paths() {
       setArray([...visited]);
     }
   }
+}
 
   
 
@@ -32,11 +41,14 @@ function Paths() {
     if (ele === 1) return "rgb(21 94 117)";
     else if (ele === 0) return "white";
     else if (ele == 2) return "#22D3EE";
+    else{
+      return "#964B00";
+    }
   }
 
   return (
     <>
-      <Navbartwo setArray={setArray} setCount={setCount} setAlgo = {setAlgo}/>
+      <Navbartwo setArray={setArray} setCount={setCount} setAlgo = {setAlgo} setAddBrick={setAddBrick}/>
       <div className="flex flex-row justify-center items-center">
         <div className="flex flex-col mt-2 bg-cyan-400 gap-1 ">
           {arr.map((row, i) => (

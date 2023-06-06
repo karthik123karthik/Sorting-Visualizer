@@ -20,22 +20,22 @@ export async function bfs(row, col, arr, setArray) {
           return;
         }
 
-        if (x - 1 >= 0 && visitedArray[x - 1][y] !== 1) {
+        if (x - 1 >= 0 && visitedArray[x - 1][y] !== 1 && visitedArray[x - 1][y] !== 3 ) {
           queue.push([x - 1, y]);
           if(visitedArray[x - 1][y] === 0) visitedArray[x - 1][y] = 1;
         }
 
-        if (x + 1 < 18 && visitedArray[x + 1][y] !== 1) {
+        if (x + 1 < 18 && visitedArray[x + 1][y] !== 1 && visitedArray[x + 1][y] !== 3) {
           queue.push([x + 1, y]);
           if(visitedArray[x + 1][y] === 0) visitedArray[x + 1][y] = 1;
         }
 
-        if (y - 1 >= 0 && visitedArray[x][y - 1] !== 1) {
+        if (y - 1 >= 0 && visitedArray[x][y - 1] !== 1 && visitedArray[x][y - 1] !== 3) {
           queue.push([x, y - 1]);
           if(visitedArray[x][y - 1] === 0) visitedArray[x][y - 1] = 1;
         }
 
-        if (y + 1 < 37 && visitedArray[x][y + 1] !== 1) {
+        if (y + 1 < 37 && visitedArray[x][y + 1] !== 1 && visitedArray[x][y + 1] !== 3) {
           queue.push([x, y + 1]);
           if(visitedArray[x][y+1] === 0) visitedArray[x][y + 1] = 1;
         }

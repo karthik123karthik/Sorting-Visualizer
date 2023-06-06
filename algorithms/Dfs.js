@@ -1,7 +1,7 @@
 import { delay } from "../components/utilities/index";
 
 export async function dfs(row, col, visited, setArray) {
-    if (row >= 18 || row < 0 || col >= 37 || col < 0 || visited[row][col] === 1)
+    if (row >= 18 || row < 0 || col >= 37 || col < 0 || visited[row][col] === 1 || visited[row][col] === 3)
       return false;
     else if (visited[row][col] === 2) {
       let temp = visited.slice();

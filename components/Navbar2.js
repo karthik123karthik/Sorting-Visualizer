@@ -1,4 +1,4 @@
-const Navbartwo = ({setArray, setCount, setAlgo}) => {
+const Navbartwo = ({setArray, setCount, setAlgo, setAddBrick}) => {
 
 
     function cleargrid(){
@@ -18,6 +18,7 @@ const Navbartwo = ({setArray, setCount, setAlgo}) => {
           <div className="flex space-x-4">
           <a href="#" onClick={() => {setAlgo(1)}}  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">DFS</a>
           <a href="#" onClick={() => {setAlgo(2)}} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">BFS</a>
+          <a href="#" onClick={() => {setAddBrick((prev) => !prev)}} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">ADD BRICK</a>
           <button onClick={cleargrid} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border mx-2 border-blue-500 hover:border-transparent rounded">Clear Grid</button>
           </div>
         </div>

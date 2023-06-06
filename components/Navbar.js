@@ -53,8 +53,7 @@ const Navbar = ({generateRandomArray,setSpeed})=>{
             </div>
           </div>
         </div>
-      </div>
-
+      </div>      
     </nav>
     )
 
