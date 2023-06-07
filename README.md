@@ -30,3 +30,7 @@
 
 <img width="956" alt="sort2" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/485d51c1-979e-4be9-ac49-9236bd1a872a">
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="960" alt="algovisualizer" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/233b186a-5662-47b2-aa82-919991dda024">
+
