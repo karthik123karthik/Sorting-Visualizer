@@ -24,13 +24,13 @@
 
 ### screenshots:
 
-<img width="960" alt="sort1" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/93e09170-5f5a-4c46-81be-bfb8d341660a">
+<img width="960" alt="newsort1" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/d216d3d9-9e1f-4738-8ed1-4bc77b5982bb">
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<img width="956" alt="sort2" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/485d51c1-979e-4be9-ac49-9236bd1a872a">
+<img width="960" alt="newmerge" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/1c8284a1-2ace-4fa1-a325-7bacd1a0586e">
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<img width="960" alt="algovisualizer" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/233b186a-5662-47b2-aa82-919991dda024">
+<img width="960" alt="aftereffect" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/15bce28b-a52f-4668-b5d3-a99cfeba6f69">
 
