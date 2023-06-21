@@ -4,19 +4,23 @@ export async function mergeSort(){
     const temp = document.getElementsByClassName("bar");
     let low = 0;
     let high = temp.length-1;
+
+    let container = document.getElementById('container');
      
    await  mergeSortAlgo(temp,low,high);
 
    for(let i=0; i<temp.length; i++){
-    temp[i].style.backgroundColor = "#005CC8";
+    temp[i].style.backgroundColor = "white";
     await delay(5);
   }
+
+  container.style.backgroundColor = '#1F2937';
    return;
 }
 
 async function mergeSortAlgo(array,low,high){
 
-      if(low>=high) return;
+        if(low>=high) return;
         let mid = low + Math.floor((high-low)/2);
         await mergeSortAlgo(array,low,mid);
         await mergeSortAlgo(array,mid+1,high);
@@ -60,7 +64,6 @@ async  function  merge(array,low,mid,high){
         mid++;
     }
  }
-
  array[high].style.backgroundColor = "green";
  return;
 }

@@ -21,17 +21,20 @@ const Home = ()=>{
        for(let i=0;i<temp.length;i++){
         temp[i].style.backgroundColor = "red";
        }
+
+       let container = document.getElementById('container');
+       container.style.backgroundColor = 'black';
       }   
    
    return(
-  <div className="h-max">
+  <div>
      <Head>
         <title>Sorting Visualizer</title>
         <meta name="project-placements" contents="algorithm-visualizer"></meta>
         <link rel="favicon" href="./favicon.ico"/>
       </Head>
        <Navbar setSpeed={setSpeed} generateRandomArray={generateRandomArray}/>
-        <div className={styles.container}>
+        <div className={styles.container} id='container' style={{'backgroundColor':"black"}}>
             <main className={styles.main}>
                 <Main speed={speed} array={array}/>
             </main>

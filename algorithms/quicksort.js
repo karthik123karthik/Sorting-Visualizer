@@ -5,9 +5,13 @@ import {delay} from "../components/utilities";
    await quickSortHelper(temp,0,temp.length-1);
 
    for(let i=0; i<temp.length; i++){
-    temp[i].style.backgroundColor = "#005CC8";
+    temp[i].style.backgroundColor = "white";
     await delay(5);
   }
+
+  let container = document.getElementById('container');
+  container.style.backgroundColor = '#1F2937';
+
    return;
 }
 
