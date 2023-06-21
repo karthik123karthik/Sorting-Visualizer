@@ -34,3 +34,8 @@
 
 <img width="960" alt="aftereffect" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/15bce28b-a52f-4668-b5d3-a99cfeba6f69">
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="960" alt="algovisualizer" src="https://github.com/karthik123karthik/Sorting-Visualizer/assets/84716922/ebd336a8-4e8c-4601-9143-5f69c8849089">
+
+
