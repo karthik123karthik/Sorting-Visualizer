@@ -9,12 +9,13 @@ const Home = ()=>{
     const [speed,setSpeed] = useState(0);    
     
     function generateRandomArray(){
-        const low =  Math.floor(100);
-        const high = Math.floor(350);
+        const low =  100;
+        const high = 350;
         const newArray=[];
         for(let i=0;i<speed+50;i++){
-          let generated  = Math.floor(Math.random()*(high-low) + low);
-          newArray.push(generated);
+         //generating a random number between low and high
+          let element = Math.floor(Math.random()*(high-low) + low);
+          newArray.push(element);
         }
        setArray(newArray);
        const temp = document.getElementsByClassName("bar")
